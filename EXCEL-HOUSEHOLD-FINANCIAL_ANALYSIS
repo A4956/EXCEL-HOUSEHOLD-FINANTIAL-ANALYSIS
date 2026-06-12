@@ -1,0 +1,80 @@
+Global Household Financial Dynamics — Excel Portfolio Project
+
+About This Project-
+
+This is one of my first end-to-end Excel projects, built as part of 
+my transition from a life sciences background into data analytics.
+
+I picked this dataset because household financial data felt close to 
+real business problems. The goal was not just to clean 
+data and make pivot tables, but to ask real questions and find 
+answers that someone non-technical could understand.
+
+What I Did-
+
+Started with a raw Kaggle dataset of 4,985 household records across 
+5 countries — Brazil, Germany, India, UK and USA.
+
+Data Cleaning (Power Query)
+Removed inconsistencies, standardised column formats and handled 
+missing values before loading into the main sheet.
+
+Calculated Columns (built manually in Excel)
+- Savings Rate % — monthly savings as a proportion of net income
+- Expense Ratio — expenses as a proportion of net income  
+- Risk Flag — classified each household as Safe, Medium or High Risk
+- Performance Flag — compared each household savings rate against 
+  their country average to label them Outperformer, Normal or 
+  Underperformer
+- Scenario Columns — modelled what happens to savings if expenses 
+  are cut by 5%, 10%, 15% and 20%
+
+PivotTables
+Built 3 pivot tables covering country-level comparison, 
+family size impact on savings, 
+how number of earners affects savings rate.
+
+Advance Analysis Sheet-
+Calculated country benchmarks, high risk counts and underperformer 
+counts per country using COUNTIFS and AVERAGEIF formulas.
+
+Scenario Model-
+Tested how many High Risk households would become financially Safe 
+if they reduced their monthly expenses by varying percentages.
+
+Summary Dashboard
+Built a single-sheet dashboard pulling everything together — KPI 
+tiles, country comparison table, risk breakdown, earner effect, 
+family size trend and key analyst insights.
+
+
+
+What I Found-
+
+A few things genuinely surprised me during this analysis:
+
+- India has the lowest average income of all 5 countries but the 
+  highest savings rate at 42%. That flips the assumption that higher 
+  income always means better saving habits.
+
+- Germany is the opposite — highest earner, lowest saver at 15.9%. 
+  The cost of living explanation makes sense when you look at the 
+  expense ratio data.
+
+- Adding one more earner to a household makes a huge difference. 
+  Single earner households save around $632 per month on average. 
+  Three-earner households save $1,928. That is a 205% jump.
+
+- Family size hurts savings more than I expected. A family of 8 
+  saves at a 17% rate vs 41% for a family of 3 — nearly 63% less.
+
+- 700 out of 966 High Risk households could turn financially Safe 
+  just by cutting expenses by 20%. That felt like the most 
+  actionable finding in the whole project.
+
+Tools Used-
+Microsoft Excel — Power Query, PivotTables, COUNTIFS, AVERAGEIF, 
+COUNTIF, Conditional Formatting, What-If Scenario Modelling
+
+Kaggle — Global Household Financial Dynamics  
+5,000 rows | 5 countries | 10 original features
